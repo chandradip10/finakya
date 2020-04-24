@@ -55,7 +55,7 @@
                 </div>
                 <br>
                 <div>
-                    <button class="button-fin">Request Early collaboration</button>
+                    <button class="button-fin" id="response">Request Early collaboration</button>
                 </div>
                 
             </div>
@@ -63,6 +63,51 @@
                 <img class="img-cover" src="images/Group 54.png">
             </div>
         </section>
+
+        <div class="bg-modal">
+            <div class="modal-content1">
+                <div class="part1">
+                    <img src="images/Group 16.png">
+                </div>
+                <div class="part2">
+                    <form action="">
+                        <h2>Work with the Chanakya of Finance!</h2>
+                        <div>
+                            <input class="small-input" type="text" placeholder="Name*">
+                            <input class="small-input" type="text" placeholder="Email*">
+                        </div>
+                        <div>
+                            <input class="small-input" type="text" placeholder="Job Title*">
+                            <input class="small-input" type="text" placeholder="Company Name*">
+                        </div>
+                        <div>
+                            <input class="small-input" type="text" placeholder="Your Contact*">
+                            <select>
+                                <option value="0">Select</option>
+                                <option value="1">I wish to run a loyalty program</option>
+                                <option value="2">I wish to offer special deals and promotions</option>
+                                <option value="3">I wish to sell more efficiently</option>
+                            </select>
+                        </div>
+                        <a href="#" class="submit-btn">Request Early Collaboration</a>
+                    </form>
+                </div>
+                <div class="close">+</div>
+            </div>
+        </div>
+        
+        <script>
+            document.getElementById('response').addEventListener('click',
+            function(){
+                document.querySelector('.bg-modal').style.display = 'flex';
+
+            });
+
+            document.querySelector('.close').addEventListener('click',
+            function(){
+                document.querySelector('.bg-modal').style.display = 'none'; 
+            })
+        </script>
         
         
         

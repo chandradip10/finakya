@@ -54,7 +54,7 @@
                 </div>
                 <br>
                 <div>
-                    <button class="button-mer">Request Early collaboration</button>
+                    <button class="button-mer" id="response">Request Early collaboration</button>
                 </div>
                 
             </div>
@@ -63,6 +63,45 @@
             </div>
         </section>
         
+
+        <div class="bg-modal">
+            <div class="modal-content1">
+                <div class="part1">
+                    <img src="images/Group 16.png">
+                </div>
+                <div class="part2">
+                    <form action="">
+                        <h2>Work with the Chanakya of Finance!</h2>
+                        <div>
+                            <input class="small-input" type="text" placeholder="Name*">
+                            <input class="small-input" type="text" placeholder="Work Email*">
+                        </div>
+                        <div>
+                            <input class="small-input" type="text" placeholder="Job Title*">
+                            <input class="small-input" type="text" placeholder="Company Name*">
+                        </div>
+                        <div>
+                            <input class="big-input" type="text" placeholder="Describe your establishment(minimum 100 words)">
+                        </div>
+                        <a href="#" class="submit-btn">Submit</a>
+                    </form>
+                </div>
+                <div class="close">+</div>
+            </div>
+        </div>
+        
+        <script>
+            document.getElementById('response').addEventListener('click',
+            function(){
+                document.querySelector('.bg-modal').style.display = 'flex';
+
+            });
+
+            document.querySelector('.close').addEventListener('click',
+            function(){
+                document.querySelector('.bg-modal').style.display = 'none'; 
+            })
+        </script>
         
         
 
