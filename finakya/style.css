@@ -7,6 +7,8 @@ body{
     color: #fff;
     display: block;
     background: linear-gradient(111deg,rgba(175,137,243,1) 0,rgba(162,131,242,1) 17%,rgba(140,120,239,1) 35%,rgba(123,112,236,1) 50%,rgba(107,104,234,1) 70%,rgba(255,255,255,1) 70%) fixed;
+    height: 70vh;
+    overflow-y: hidden;
 }
 
 .body-1{
