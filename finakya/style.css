@@ -9,6 +9,23 @@ body{
     background: linear-gradient(111deg,rgba(175,137,243,1) 0,rgba(162,131,242,1) 17%,rgba(140,120,239,1) 35%,rgba(123,112,236,1) 50%,rgba(107,104,234,1) 70%,rgba(255,255,255,1) 70%) fixed;
 }
 
+.body-1{
+    color: #fff;
+    display: block;
+    background: linear-gradient(111deg,rgba(251,251,254,1) 0,rgba(207,208,248,1) 9%,rgba(145,148,240,1) 26%,rgba(134,137,238,1) 50%,rgba(104,108,233,1) 70%,rgba(255,255,255,1) 70%) fixed;
+}
+
+.body-2{
+    color: #fff;
+    display: block;
+    background: linear-gradient(111deg,rgba(12,12,14,1) 0,rgba(20,21,48,.9332107843137255) 16%,rgba(39,40,95,1) 35%,rgba(57,59,139,1) 58%,rgba(81,84,197,1) 70%,rgba(255,255,255,1) 70%) fixed;
+}
+
+.body-3{
+    color: #fff;
+    display: block;
+    background: linear-gradient(111deg,rgba(127,73,145,1) 0,rgba(117,81,172,1) 17%,rgba(111,86,190,1) 35%,rgba(110,100,213,1) 50%,rgba(114,113,228,1) 70%,rgba(255,255,255,1) 70%) fixed;
+}
 header{
     display: flex;
     width: 95%;
@@ -18,6 +35,11 @@ header{
     font-family: 'Poppins', sans-serif;
 }
 
+.heading-la{
+    display: inline-flex;
+    flex: 4;
+    align-items: center;
+}
 .main-logo,.nav-links,.status{
     display: flex;
 }
@@ -62,6 +84,7 @@ nav{
     flex: 1;
 	justify-content: flex-end;
 }
+
 .presentation{
     display: flex;
     width: 90%;
@@ -121,6 +144,30 @@ th {
         background-image:linear-gradient(to right, #713af1 0%, #a15af1 40%,#c085f7 80%, #c097ee 100%);
 }
 
+.button-fin{
+    display: inline-block;
+    height: 45px;
+    width: 40%;
+    justify-content: space-around;
+    border: none;
+    color: white;
+    background-color: rgb(82, 226, 82);
+    border-radius: 5px;
+    outline: none;
+}
+
+.button-mer{
+    display: inline-block;
+    height: 45px;
+    width: 40%;
+    justify-content: space-around;
+    border: none;
+    color: white;
+    background-color: steelblue;
+    border-radius: 5px;
+    outline: none;
+}
+
 .cover {
 	flex: 1;
 	display: flex;
@@ -152,6 +199,9 @@ th {
 }
 
 @media screen and (max-width: 1024px) {
+    .heading-la{
+        display: block;
+    }
 	.presentation {
 		flex-direction: column;
 	}
@@ -177,9 +227,7 @@ th {
         width: 100%;
     }
 
-    .status{
-        float: left;
-    }
+
     .nav-links
     {
         display: none;
@@ -192,11 +240,6 @@ th {
 
     .nav-links{
         float: left;
-    }
-    .nav-link{
-        display: block;
-        
-
     }
     button{
         border: none;
