@@ -8,7 +8,7 @@ body{
     display: block;
     background: linear-gradient(111deg,rgba(175,137,243,1) 0,rgba(162,131,242,1) 17%,rgba(140,120,239,1) 35%,rgba(123,112,236,1) 50%,rgba(107,104,234,1) 70%,rgba(255,255,255,1) 70%) fixed;
     height: 70vh;
-    overflow-y: hidden;
+    overflow-y: hiddenCD  FINA;
 }
 
 .body-1{
@@ -84,7 +84,7 @@ nav{
 
 .status{
     flex: 1;
-	justify-content: flex-end;
+    justify-content: flex-end;
 }
 
 .presentation{
@@ -202,59 +202,6 @@ th {
 
 }
 
-@media screen and (max-width: 1024px) {
-    .heading-la{
-        display: block;
-    }
-	.presentation {
-		flex-direction: column;
-	}
-	.introduction {
-		text-align: left;
-    }
-    .cover{
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .cover img {
-		height: 70%;
-    }
-    
-    .intro-text h1{
-        font-size: 200%;
-        margin-top: 0px;
-    }
-    .intro-text h4{font-size: 100%;}
-
-    table{
-        width: 100%;
-    }
-
-
-    .nav-links
-    {
-        display: none;
-    }
-    .mobile-icon{
-        display: block;
-        color: #713af1;
-        float: right;
-    }
-
-    .nav-links{
-        float: left;
-    }
-    button{
-        border: none;
-    }
-
-    .part1{
-        display: none;
-    }
-
-}
-
 .bg-modal{
     background-color: rgba(0, 0, 0, 0.9);
 	width: 100%;
@@ -266,8 +213,8 @@ th {
 }
 
 .modal-content1{
-    height: 350px;
-	width: 750px;
+    height: 60%;
+	width: 55%;
 	background-color: white;
 	text-align: center;
     border-radius: 4px;
@@ -351,4 +298,68 @@ select{
 	color: #333;
 	transform: rotate(45deg);
     cursor: pointer;
+}
+
+@media screen and (max-width: 1024px) {
+    .heading-la{
+        display: block;
+    }
+	.presentation {
+		flex-direction: column;
+	}
+	.introduction {
+		text-align: left;
+    }
+    .cover{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .cover img {
+		height: 70%;
+    }
+    
+    .intro-text h1{
+        font-size: 200%;
+        margin-top: 0px;
+    }
+    .intro-text h4{font-size: 100%;}
+
+    table{
+        width: 100%;
+    }
+
+
+    .nav-links
+    {
+        display: none;
+    }
+
+    button{
+        border: none;
+    }
+
+    .mobile-icon{
+        display: block;
+        color: #713af1;
+    }
+
+    .nav-links{
+        float: left;
+    }
+
+    .part1{
+        display: none;
+        flex: 0;
+    }
+
+    .modal-content1{
+        flex: 1;
+        height: 35%;
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 10%;
+        margin-top: 25%;
+    }
+
 }
